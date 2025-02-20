@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/user/{name?}', function ($name=null) { return 'My name is '.$name;
+Route::get('/user/{name?}', function ($name='Sabrina Rahmadini') { return 'My name is '.$name;
 });
+
 
 
 
