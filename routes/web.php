@@ -12,7 +12,32 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/hello', function () {
+ return 'Hello World';
 });
+
+Route::get('/posts/{post}/comments/{comment}', function
+($postId, $commentId) {
+    return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
