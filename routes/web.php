@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/hello', [WelcomeController::class,'hello']);
+Route::get('/', HomeController::class);
 
 
 
