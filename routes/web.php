@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/user/{name?}', function ($name='Sabrina Rahmadini') { return 'My name is '.$name;
-});
-
+Route::get('/hello', [WelcomeController::class,'hello']);
 
 
 
