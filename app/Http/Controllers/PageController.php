@@ -16,5 +16,5 @@ class PageController extends Controller
     public function articles() {
         return 'Article Page with ID {id}';
         }
-    
+
 }
