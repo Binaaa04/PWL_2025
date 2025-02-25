@@ -13,8 +13,4 @@ class PageController extends Controller
         return 'Name : Sabrina Rahmadini
         NIM : 2341760155';
         }
-    public function articles() {
-        return 'Article Page with ID {id}';
-        }
-
 }

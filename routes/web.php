@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [PageController::class,'index']);
-Route::get('/about', [PageController::class,'about']);
-Route::get('/articles/{id}', [PageController::class,'articles']);
-?>
+Route::resource('photos', PhotoController::class);
+
 
 
 
