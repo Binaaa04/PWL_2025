@@ -20,4 +20,4 @@ Route::prefix('category')->group(function () {
 Route::get('/user/{id}/name/{name}', [UserController::class, 'profile']);
 
 // Sales Page
-Route::get('/sales', [SalesController::class, 'index']);
+Route::get('/sales', [SalesController::class, 'indexs']);
